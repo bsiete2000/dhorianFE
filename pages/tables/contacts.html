@@ -380,7 +380,12 @@
              
             </li>
           </ul>
-          
+          <hr>
+           <ul class="sidebar-menu contact-buttons">
+            <li class="treeview ">
+              <button class="btn btn-block btn-primary btn-lg "><i class="fa fa-plus-circle"></i>Agregar filtro</button> 
+            </li><br><br><br><br><br><br>
+          </ul>
           <hr>
            <ul class="sidebar-menu import-buttons">
             <li class="treeview ">
@@ -422,19 +427,19 @@
 
             </div>
             <div class="col-md-8 ">
-            <!-- filtros -->
-<div class="" ng-app="myApp" ng-controller="tagsCtrl"> 
+                        <!-- filtros -->
+            <div id="app2"  ng-controller="tagsCtrl"> 
 
-                  <div class="row">
-                    <div class="col-md-12">
-                      <tag-manager tags="opts.tags" autocomplete="allTags" alphasort="false"></tag-manager>
-                      
-                    </div>
-                    <div class="clearfix"></div>
-                    
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <tag-manager tags="opts.tags" autocomplete="allTags" alphasort="false"></tag-manager>
+                                  
+                                </div>
+                                <div class="clearfix"></div>
+                                
 
-    </div><!--/row-->
-</div><!--/container-->
+                </div><!--/row-->
+            </div><!--/filtros-->
             </div>
             <div class="col-md-1 text-right">
            <div class="btn-group">
@@ -471,7 +476,7 @@
                     <tbody>
                       <tr>
                         <td><input name="" type="checkbox" value=""></td>
-                        <td><a href="../examples/profile.html"><img src="../../dist/img/user4-128x128.jpg" class="img-circle contact-user" alt="User Image">Esteban Cabrera Coellar</a><a href="#" class="uiLinkWithoutUnderline uiLinkDark view-sidebar" data-reactid=".u.1.$115.$c541.0.2"><i name="eye" class="fa fa-eye" data-reactid=".u.1.$115.$c541.0.2.0"></i></a></td>
+                        <td><a href="../examples/profile.html"><img src="../../dist/img/user4-128x128.jpg" class="img-circle contact-user" alt="User Image">Esteban Cabrera Coellar</a></td>
                         <td>ecabrera@hotmail.com</td>
                           <td>099876575453</td>
                         <td>Activo</td>
@@ -760,7 +765,8 @@
 
     <!-- jQuery 2.1.4 -->
     <script src="../../plugins/jQuery/jQuery-2.1.4.min.js"></script>
-    <script type='text/javascript' src="//code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+        <script type='text/javascript' src="//code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+
     <!-- Bootstrap 3.3.5 -->
     <script src="../../bootstrap/js/bootstrap.min.js"></script>
 
@@ -772,6 +778,7 @@
     <!-- FastClick -->
     <script src="../../plugins/fastclick/fastclick.min.js"></script>
     <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+
 
     <!-- AdminLTE App -->
     <script src="../../dist/js/app.js"></script>
@@ -791,7 +798,11 @@
         });
       });
     </script>
-    <!-- Modal  agregar contacto-->
+    <script>
+    var domElement = document.getElementById('app2'); 
+    angular.bootstrap(domElement, ["myApp2"]);
+    </script>
+    <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
@@ -802,132 +813,103 @@
         <h4 class="modal-title">Agregar contacto</h4>
       </div>
       <div class="modal-body">
-        <p>Por favor llene los datos del contacto.</p>
-        <div class="form-group">
-            <label>Nombre</label>
-            <input type="text" class="form-control" placeholder="Enter ...">
-        </div>
-        <div class="form-group">
-            <label>Apellido</label>
-            <input type="text" class="form-control" placeholder="Enter ...">
-        </div>
-        <div class="form-group">
-            <label>Empresa</label>
-            <input type="text" class="form-control" placeholder="Enter ...">
-        </div>
-        <div class="form-group">
-            <label>ID - cedula o ruc</label>
-            <input type="text" class="form-control" placeholder="Enter ...">
-        </div>
-        <div class="Teléfono"</label>
-            <input type="text" class="form-control" placeholder="Enter ...">
-        </div>
-        <div class="form-group">
-            <label>Celular</label>
-            <input type="text" class="form-control" placeholder="Enter ...">
-        </div>
+        <p>Some text in the modal.</p>
         <div class="form-group">
             <label for="exampleInputEmail1">Email</label>
             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingresar email">
         </div>
-        
         <div class="form-group">
-            <label>País</label>
-            <select class="form-control select2" style="width: 100%;">
-              <option selected="selected">Ecuador</option>
-              <option>Colombia</option>
-              <option>Peru</option>
-              <option>Brasil</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Ciudad</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingresar ciudad">
-        </div>
-        <div class="form-group">
-            <label>Dirección</label>
+            <label>Text</label>
             <input type="text" class="form-control" placeholder="Enter ...">
         </div>
         <div class="form-group">
-            <label for="exampleInputEmail1">Fuente de contacto</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingresar fuente de contacto">
+            <label>Text</label>
+            <input type="text" class="form-control" placeholder="Enter ...">
         </div>
-      <div class="form-group">
-            <label>Estado</label>
+        <div class="form-group">
+            <label>Propietario</label>
             <select class="form-control select2" style="width: 100%;">
-              <option selected="selected">En espera</option>
-              <option>activo</option>
-              <option>inactivo</option>
+              <option selected="selected">jrojas@quefacilweb.com</option>
+              <option>skl@quefacilweb.com</option>
+              <option>assd@quefacilweb.com</option>
+              <option>asdee@quefacilweb.com</option>
+              <option>dsss@quefacilweb.com</option>
+              <option>wewe@quefacilweb.com</option>
+              <option>wewee@quefacilweb.com</option>
             </select>
           </div>
+        <div class="form-group">
+            <label>Text</label>
+            <input type="text" class="form-control" placeholder="Enter ...">
+        </div>
+      </div>
+      
       <div class="box-footer">
-                    <button type="submit" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-info pull-right">Guardar</button>
+                    <button type="submit" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-info pull-right">Sign in</button>
                   </div>
     </div>
 
   </div>
-</div></div>
+</div>
 <!-- Modal -->
-
 <div id="myModaleditcol" class="modal fade" role="dialog">
-  <div class="modal-dialog"> 
-    
+  <div class="modal-dialog">
+
     <!-- Modal content-->
     <div class="modal-content">
       <hr>
-      <div class="container-fluid" ng-app="myApp">
-        <div class="container" ng-controller="ctrlDualList">
-          <div class="row">
-            <div class="col-md-10 text-center">
-              <h3>Editar columnas</h3>
-            </div>
+<div class="container-fluid" ng-app="myApp"> 
+  <div class="container" ng-controller="ctrlDualList">
+      <div class="row">
+            <div class="col-md-10 text-center"><h3>Editar columnas</h3></div>
             <div class="col-sm-4 ">
-              <div class="list-group" id="list1" x-lvl-drop-target="true" x-on-drop="drop(dragEl, dropEl, bToA)"> <a href="javascript:;" class="list-group-item active">Columnas inactivas
-                <input title="Toggle all" ng-click="toggleA()" ng-model="toggle" value="{{toggle}}" type="checkbox" class="pull-right">
-                </a> <span ng-repeat="user in listA"> <a href="javascript:;" data-id="{{user.id}}" x-lvl-draggable="true" class="list-group-item">{{user.firstName}} <small class="text-muted"><em>{{user.role}}</em></small>
-                <input id="{{user.id}}" ng-click="selectedA.push(user.id)" name="selectedA[]" value="{{user.id}}" ng-checked="selectedA.indexOf(user.id) > -1" type="checkbox" class="pull-right">
-                </a> </span> </div>
-            </div>
-            <!--/col-4-->
+              <div class="list-group" id="list1" x-lvl-drop-target="true" x-on-drop="drop(dragEl, dropEl, bToA)">
+                <a href="javascript:;" class="list-group-item active">Columnas inactivas
+                  <input title="Toggle all" ng-click="toggleA()" ng-model="toggle" value="{{toggle}}" type="checkbox" class="pull-right"></a>
+                <span ng-repeat="user in listA">
+                  <a href="javascript:;" data-id="{{user.id}}" x-lvl-draggable="true" class="list-group-item">{{user.firstName}}
+                    <small class="text-muted"><em>{{user.role}}</em></small>                    
+                    <input id="{{user.id}}" ng-click="selectedA.push(user.id)" name="selectedA[]" value="{{user.id}}" ng-checked="selectedA.indexOf(user.id) > -1" type="checkbox" class="pull-right">
+                  </a>
+                </span>
+              </div>
+            </div><!--/col-4-->
             <div class="col-md-2 v-center text-center">
               <div class="btn-group">
                 <button title="Send to list 1" class="btn btn-default" ng-click="bToA()" id="btnA"><i class="glyphicon glyphicon-chevron-left"></i></button>
                 <button title="Send to list 2" class="btn btn-default" ng-click="aToB()" id="btnB"><i class="glyphicon glyphicon-chevron-right"></i></button>
               </div>
               <h6 class="text-center">mover de lista-a-lista</h6>
-            </div>
-            <!--/col-2-->
+            </div><!--/col-2-->
             <div class="col-sm-4">
-              <div class="list-group" id="list2" x-lvl-drop-target="true" x-on-drop="drop(dragEl, dropEl, aToB)"> <a href="javascript:;" class="list-group-item active">Columnas activas
-                <input title="Toggle all" ng-click="toggleB()" ng-model="toggle" value="{{toggle}}" type="checkbox" class="pull-right">
-                </a> <span ng-repeat="user in listB"> <a href="javascript:;" data-id="{{user.id}}" class="list-group-item" x-lvl-draggable="true">{{user.firstName}} <small class="text-muted"><em>{{user.role}}</em></small>
-                <input id="{{user.id}}" ng-click="selectedB.push(user.id)" name="selectedB[]" value="{{user.id}}" ng-checked="selectedB.indexOf(user.id) > -1" type="checkbox" class="pull-right">
-                </a> </span> </div>
-            </div>
-            <!--/col-4--> 
-          </div>
-          <!--/row--> 
-        </div>
-        <!--/container--></div>
-      <!--/container-fluid-->
+              <div class="list-group" id="list2" x-lvl-drop-target="true" x-on-drop="drop(dragEl, dropEl, aToB)">
+                <a href="javascript:;" class="list-group-item active">Columnas activas
+                  <input title="Toggle all" ng-click="toggleB()" ng-model="toggle" value="{{toggle}}" type="checkbox" class="pull-right">
+                </a>
+                <span ng-repeat="user in listB">
+                  <a href="javascript:;" data-id="{{user.id}}" class="list-group-item" x-lvl-draggable="true">{{user.firstName}}
+                    <small class="text-muted"><em>{{user.role}}</em></small>
+                    <input id="{{user.id}}" ng-click="selectedB.push(user.id)" name="selectedB[]" value="{{user.id}}" ng-checked="selectedB.indexOf(user.id) > -1" type="checkbox" class="pull-right">
+                  </a>
+                </span>
+              </div>
+            </div><!--/col-4-->
+      </div><!--/row-->
+  </div><!--/container--></div><!--/container-fluid-->
+  
+
+
+
+      
       <div class="box-footer">
-        <button type="submit" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-info pull-right">Guardar cambios</button>
-      </div>
+                    <button type="submit" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-info pull-right">Guardar cambios</button>
+                  </div>
     </div>
+
   </div>
 </div>
 
-
-
-
-<!-- The Right Sidebar -->
-<aside class="control-sidebar control-sidebar-light">
-  <!-- Content of the sidebar goes here -->
-</aside>
-<!-- The sidebar's background -->
-<!-- This div must placed right after the sidebar for it to work-->
-<div class="control-sidebar-bg"></div>
   </body>
 </html>

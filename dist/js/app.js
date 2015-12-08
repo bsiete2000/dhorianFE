@@ -977,7 +977,7 @@ $(document).ready(function() {
 
 /*autocomplete tags para los filtros*/
         
-var myApp = angular.module('myApp', [])
+var myApp2 = angular.module('myApp2', [])
 .directive('tagManager', function() {
   
     return {
