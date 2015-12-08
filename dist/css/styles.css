@@ -1,0 +1,161 @@
+/*Dhorian styles*/
+div#example1_filter label {
+    width: 100%;
+    text-align: right;
+}
+div#example1_filter input.form-control.input-sm {
+    width: 80%;
+}
+.dropdown-menu {
+    right: 0;
+    left: initial;
+}
+
+/*Drag styles*/
+.lvl-over {
+  border: 1px dashed #555 !important;
+}
+
+.lvl-target {
+  background-color: #ddd; 
+  opacity: .5;
+}
+
+[draggable] {
+  cursor: move;
+}
+div#myModaleditcol .modal-dialog {
+    width: 80%;
+}
+/*tareas*/
+
+.tareas .fc-toolbar,
+.tareas .fc-time-grid-container,
+.tareas td.fc-axis,
+.tareas .fc-content-skeleton td.fc-axis,
+.tareas .fc-highlight-skeleton td.fc-axis,
+.tareas th.fc-axis{
+  display: none;
+}
+.tareas .fc-agenda-view .fc-day-grid .fc-row {
+    min-height: 32em;
+}
+.tareas th.fc-day-header.fc-widget-header.fc-sun:before {
+    content: "Sin empezar";
+}
+.tareas th.fc-day-header.fc-widget-header.fc-mon:before {
+    content: "En progreso";
+}
+.tareas th.fc-day-header.fc-widget-header.fc-tue:before {
+    content: "Terminada";
+}
+.tareas th.fc-day-header.fc-widget-header.fc-wed:before {
+    content: "En revisión";
+}
+.tareas th.fc-day-header.fc-widget-header.fc-thu:before {
+    content: "Aprobada";
+}
+.tareas th.fc-day-header.fc-widget-header.fc-fri:before {
+    content: "No aprovada";
+}
+.tareas th.fc-day-header.fc-widget-header.fc-sat:before {
+    content: "Re hacer";
+}
+
+.tareas .fc-today {
+    background: transparent;
+}
+/*.tareas td.fc-widget-content.fc-fri,
+.tareas td.fc-widget-content.fc-sat  {
+    display: none;
+}*/
+th.fc-widget-header {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+}
+/*.tareas .fc-content-skeleton td,
+ {
+    width: 20%;
+}
+.tareas .fc-content-skeleton td.fc-event-container {
+  width: 20%;
+}*/
+.page-tareas .btn-group {
+    display: none;
+}
+.tareas .fc-day-grid-event>.fc-content {
+    text-align: center;
+}
+.tareas span.fc-title {
+    font-size: 18px;
+}
+.row.top-bar {
+    margin-bottom: 10px;
+}
+
+/*autocomplete filtros*/
+            .tags {
+   margin-bottom: 5px;
+} 
+
+.tags input[type="text"] {
+   border-width:0;
+   outline: none;
+   width:90px;
+   font-size:12px;
+} 
+
+.tags .form-control {
+   height:auto;
+   padding:5px;
+   max-width:86%;
+   vertical-align:bottom;
+} 
+
+.tags .tag {
+   display: inline-block;
+   margin-right: 4px;
+   font-size: 13px;
+}
+  
+.tag .close {
+   font-size: 14px;
+   margin-left: 5px;
+}
+
+.top-bar .btn {
+    padding: 6px 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

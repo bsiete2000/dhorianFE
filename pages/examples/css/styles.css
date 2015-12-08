@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Dhorian styles*/
+body{ 
+        background: url(../images/login-bg.jpg) no-repeat #44799f bottom !important;
+}
+.login-box, .register-box {
+    width: 800px;
+}
+.adbox img{
+	width:100%;
+	height:auto;
+}
