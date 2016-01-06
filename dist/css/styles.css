@@ -92,6 +92,7 @@ th.fc-widget-header {
 }
 .row.top-bar {
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 /*autocomplete filtros*/
@@ -208,7 +209,118 @@ td:hover a.preview-contact {
     margin-left: 10px;
 }
 
+/*task styles*/
+#container {
+margin: 0 auto;
+width: 1060px;
+min-height: 100%;
+background-color: transparent;
+border: 0px;
+}
+#header {
+font-size: 30px;
+text-align: center;
+margin-bottom: 15px;
+color: #fff;
+}
+.task-list {
+width: 250px;
+float: left;
+margin: 0 5px;
+background-color: #e3e3e3;
+min-height: 240px;
+border-radius: 10px;
+padding-bottom: 15px;
+}
+.task-list input, .task-list textarea {
+width: 240px;
+margin: 1px 5px;
+}
+.task-list input {
+height: 30px;
+}
+.task-list input[type="button"] {
+width: 100px;
+margin: 5px;
+}
+.todo-task {
+border-radius: 5px;
+background-color: #fff;
+width: 230px;
+margin: 5px;
+padding: 5px;
+}
+.todo-task > .task-header {
+font-weight: bold;
+}
+.todo-task > .task-date {
+font-size: small;
+font-style: italic;
+}
+.todo-task > .task-description {
+font-size: smaller;
+}
+h3 {
+text-align: center;
+}
+#delete-div {
+display: none;
+background-color: #fff;
+border: 3px dotted #000;
+margin: 10px;
+height: 75px;
+line-height: 75px;
+text-align: center;
+}
+.task-list {
+	    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 0;
+    padding: 5px;
+	box-shadow: 5px 5px 0px #dddddd;
+	min-height: 500px;
+}
+.todo-task {
+    border-radius: 0;
+    border: solid 1px #d7d7d5;
+    width: auto;
+    margin: 0;
+    padding: 5px;
+}
+section.container.tasks-col {
+    overflow: scroll;
+    padding-bottom: 30px;
+	margin-left: 12px;
+}
+section.container.tasks-col .row {
+    width: 1200px;
+}
+.col-md-3.task-col {
+    width: 200px;
+    padding: 0 5px;
+}
 
+.col-md-3.task-col h3 {
+    background-color: #b8b8b4;
+    margin-bottom: 0;
+    padding: 10px 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+	box-shadow: 5px 5px 0px #dddddd;
+}
+.task-description:before {
+    content: 'Finaliza: ';
+    text-transform: uppercase;
+}
+form.navbar-form.search-top {
+    width: 100%;
+	margin: 0;
+}
+form.navbar-form.search-top .input-group {
+    width: 100%;
+}
 
 
 
