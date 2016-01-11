@@ -310,6 +310,18 @@ section.container.tasks-col .row {
     font-weight: bold;
 	box-shadow: 5px 5px 0px #dddddd;
 }
+.totalbox {
+    background-color: #0085b9;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 0;
+    margin-top: 0;
+    float: left;
+    width: 100%;
+	box-shadow: 5px 5px 0px #dddddd;
+}
 .task-description:before {
     content: 'Finaliza: ';
     text-transform: uppercase;
