@@ -271,6 +271,19 @@
     </div>
     
     <!-- Main content -->
+    
+    <!-- tabs -->
+    <div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-fw fa-columns"></i></a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-fw fa-table"></i></a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
     <section class="container tasks-col">
       <div class="row">
         <div class="col-md-3 task-col">
@@ -312,6 +325,117 @@
         </div>
       </div>
     </section>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+    <div class="row">
+            <div class="col-xs-12">
+            
+
+              <div class="box">
+                <div class="box-body">
+                  <table id="example1" class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th class="checkbox-contacts"><input name="" type="checkbox" value=""></th>
+                        <th>Oportunidad</th>
+                        <th>Etapa</th>
+                        <th>Fecha de cierre</th>
+                        <th>Dueño</th>
+                        <th>Cantidad</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><input name="" type="checkbox" value=""></td>
+                        <td><a href="examples/empresaprofile.html"><i class="fa fa-fw fa-usd"></i>Colineal</a></td>
+                        <td>Contactar</td>
+                          <td><i class="fa fa-fw fa-calendar"></i> 31/01/2016</td>
+                        <td>Luis Alberto Diaz</td>
+                        <td> $500</td>
+                      </tr>
+                      <tr>
+                        <td><input name="" type="checkbox" value=""></td>
+                        <td><a href="examples/empresaprofile.html"><i class="fa fa-fw fa-usd"></i>Colineal</a></td>
+                        <td>Contactar</td>
+                          <td><i class="fa fa-fw fa-calendar"></i> 31/01/2016</td>
+                        <td>Luis Alberto Diaz</td>
+                        <td> $500</td>
+                      </tr>
+                      <tr>
+                        <td><input name="" type="checkbox" value=""></td>
+                        <td><a href="examples/empresaprofile.html"><i class="fa fa-fw fa-usd"></i>Colineal</a></td>
+                        <td>Contactar</td>
+                          <td><i class="fa fa-fw fa-calendar"></i> 31/01/2016</td>
+                        <td>Luis Alberto Diaz</td>
+                        <td> $500</td>
+                      </tr>
+                      <tr>
+                        <td><input name="" type="checkbox" value=""></td>
+                        <td><a href="examples/empresaprofile.html"><i class="fa fa-fw fa-usd"></i>Colineal</a></td>
+                        <td>Contactar</td>
+                          <td><i class="fa fa-fw fa-calendar"></i> 31/01/2016</td>
+                        <td>Luis Alberto Diaz</td>
+                        <td> $500</td>
+                      </tr>
+                      <tr>
+                        <td><input name="" type="checkbox" value=""></td>
+                        <td><a href="examples/empresaprofile.html"><i class="fa fa-fw fa-usd"></i>Colineal</a></td>
+                        <td>Contactar</td>
+                          <td><i class="fa fa-fw fa-calendar"></i> 31/01/2016</td>
+                        <td>Luis Alberto Diaz</td>
+                        <td> $500</td>
+                      </tr>
+                      <tr>
+                        <td><input name="" type="checkbox" value=""></td>
+                        <td><a href="examples/empresaprofile.html"><i class="fa fa-fw fa-usd"></i>Colineal</a></td>
+                        <td>Contactar</td>
+                          <td><i class="fa fa-fw fa-calendar"></i> 31/01/2016</td>
+                        <td>Luis Alberto Diaz</td>
+                        <td> $500</td>
+                      </tr>
+                      <tr>
+                        <td><input name="" type="checkbox" value=""></td>
+                        <td><a href="examples/empresaprofile.html"><i class="fa fa-fw fa-usd"></i>Colineal</a></td>
+                        <td>Contactar</td>
+                          <td><i class="fa fa-fw fa-calendar"></i> 31/01/2016</td>
+                        <td>Luis Alberto Diaz</td>
+                        <td> $500</td>
+                      </tr>
+                      <tr>
+                        <td><input name="" type="checkbox" value=""></td>
+                        <td><a href="examples/empresaprofile.html"><i class="fa fa-fw fa-usd"></i>Colineal</a></td>
+                        <td>Contactar</td>
+                          <td><i class="fa fa-fw fa-calendar"></i> 31/01/2016</td>
+                        <td>Luis Alberto Diaz</td>
+                        <td> $500</td>
+                      </tr>
+                      
+                     
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th class="checkbox-contacts"><input name="" type="checkbox" value=""></th>
+                        <th>Oportunidad</th>
+                        <th>Etapa</th>
+                        <th>Fecha de cierre</th>
+                        <th>Dueño</th>
+                        <th>Cantidad</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+          </div>
+    </div>
+  </div>
+
+</div>
+    
+    <!-- end tabs -->
+    
+    
+    
     <!-- /.content --> 
   </div>
   <!-- /.content-wrapper -->
@@ -709,5 +833,11 @@ function toggle(){
 			$("#datepicker").datepicker("option", "dateFormat", "dd/mm/yy");
 			todo.init();
 		</script>
+<script type="text/javascript">
+$('#myTabs a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
 </body>
 </html>

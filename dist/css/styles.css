@@ -333,7 +333,11 @@ form.navbar-form.search-top {
 form.navbar-form.search-top .input-group {
     width: 100%;
 }
-
+.ui-draggable{
+	cursor: move;
+	cursor: -webkit-grabbing;
+	z-index:999;
+}
 
 
 
