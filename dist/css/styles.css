@@ -338,8 +338,22 @@ form.navbar-form.search-top .input-group {
 	cursor: -webkit-grabbing;
 	z-index:999;
 }
-
-
+.search-topnav .nav {
+    width: 64px;
+    margin: 0;
+    padding: 0;
+}
+.search-topnav .nav>li>a {
+    padding: 5px;
+}
+.search-topnav {
+    float: left;
+}
+form.navbar-form.search-top {
+    width: 80%;
+    float: left;
+	padding-left: 0px;
+}
 
 
 

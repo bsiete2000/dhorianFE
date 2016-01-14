@@ -29,7 +29,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="hold-transition skin-blue sidebar-mini page-tareas">
+<body class="hold-transition skin-blue sidebar-mini page-deal">
 <div class="wrapper">
   <header class="main-header"> 
     
@@ -256,6 +256,15 @@
 </div><!--/container-->
             </div>
       <div class="col-md-10 ">
+      <div class="col-md-12 ">
+      <div class=" search-topnav">
+  
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-fw fa-columns"></i></a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-fw fa-table"></i></a></li>
+  </ul>
+  
+  </div>
         <form class="navbar-form search-top" role="search">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
@@ -265,22 +274,15 @@
           </div>
         </form>
       </div>
+      </div>
       <div class="col-md-2 ">
-        <button class="btn btn-block btn-primary  " data-toggle="modal" data-target="#newtask"><i class="fa fa-plus-circle"></i> Nueva Oportunidad</button>
+        <button class="btn btn-block btn-primary  " data-toggle="modal" data-target="#newtask"><i class="fa fa-plus-circle"></i> Oportunidad</button>
       </div>
     </div>
     
     <!-- Main content -->
     
-    <!-- tabs -->
-    <div>
-
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-fw fa-columns"></i></a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-fw fa-table"></i></a></li>
-  </ul>
-
+    
   <!-- Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="home">
@@ -317,14 +319,7 @@
       
       <!-- /.row --> 
     </section>
-    <section class="container taskfooter">
-      <div class="row">
-        <div class="col-lg-12">
-          <input type="button" class="btn btn-primary" value="Borrar todas las tareas" onClick="todo.clear();"/>
-          <div id="delete-div">Arrastre aqui para borrar</div>
-        </div>
-      </div>
-    </section>
+    
     </div>
     <div role="tabpanel" class="tab-pane" id="profile">
     <div class="row">
@@ -586,87 +581,23 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Agregar Tarea</h4>
+        <h4 class="modal-title">Agregar Oportunidad</h4>
       </div>
       <div class="modal-body"> 
         
         <!-- /. box -->
         
         
-          <div class="row">
-              <div class=" col-md-6">
-              <fieldset class="form-group">
-          		<label for="exampleInputEmail1">STATUS</label><br>
-                <fieldset class="form-group">
-    <select class="form-control" id="exampleSelect1">
-      <option>SIN EMPEZAR</option>
-      <option>EN PROCESO</option>
-      <option>EN ESPERA</option>
-      <option>COMPLETADA</option>
-      <option>POSTERGADA</option>
-    </select>
-  </fieldset>
-              </fieldset>
-              </div>
-              <div class=" col-md-6">
-              <fieldset class="form-group">
-    <label for="exampleInputEmail1">HORA</label>
-    <fieldset class="form-group">
-    <select class="form-control" id="exampleSelect1">
-      <option>1AM</option>
-      <option>2AM</option>
-      <option>3AM</option>
-      <option>4AM</option>
-      <option>5AM</option>
-      <option>6AM</option>
-      <option>7AM</option>
-      <option>8AM</option>
-      <option>9AM</option>
-      <option>10AM</option>
-      <option>11AM</option>
-      <option>12AM</option>
-      <option>1PM</option>
-      <option>2PM</option>
-      <option>3PM</option>
-      <option>4PM</option>
-      <option>5PM</option>
-      <option>6PM</option>
-      <option>7PM</option>
-      <option>8PM</option>
-      <option>9PM</option>
-      <option>10PM</option>
-      <option>11PM</option>
-      <option>12PM</option>
-      
-    </select>
-  </fieldset>
-  </fieldset>
-              </div>
-          </div>
-          <div class="row">
-          <hr>
-              <div class=" col-md-12">
-              <fieldset class="form-group">
-          		<label for="exampleInputEmail1">ASIGNADO A</label><br>
-                <fieldset class="form-group">
-    <select class="form-control" id="exampleSelect1">
-      <option>JROJAS@QUEFACILWEB.COM</option>
-      <option>DURBINA@IQCONSULTING.EC</option>
-      <option>LALMEIDA@IQCONSULTING.EC</option>
-    </select>
-  </fieldset>
-              </fieldset>
-              </div>
-              </div>
+          
               <form id="todo-form">
               <div class="row">
           <hr>
           <div class=" col-md-12">
           <fieldset class="form-group">
-          <label for="exampleInputEmail1">TAREA</label><br>
+          <label for="exampleInputEmail1">Nombre de la oportunidad</label><br>
               </fieldset>
               <fieldset class="form-group">
-            <input type="text" placeholder="TAREA" class="form-control" />
+            <input type="text" placeholder="OPORTUNIDAD" class="form-control" />
             </fieldset>
            </div>
            </div>
@@ -685,8 +616,8 @@
            <hr>
             <div class=" col-md-12">
             <fieldset class="form-group">
-            <label for="exampleInputEmail1">DESCRIPCION DE LA TAREA</label><br>
-            <textarea placeholder="Descripción" class="form-control"></textarea>
+            <label for="exampleInputEmail1">MONTO</label><br>
+            <input type="text" placeholder="MONTO" class="form-control">
            
             </fieldset>
             <div class="row">
@@ -700,21 +631,63 @@
             </div>
             </div>
              </form>
-            <div class="row">
-            <hr>
-              <div class=" col-md-4">
-            	<label for="exampleInputEmail1">CONTACTO</label><br>
-                <button class="btn btn-secondary   "><i class="fa fa-plus-circle"></i> CONTACTO</button>
+             <div class="row">
+              <div class=" col-md-6">
+              <fieldset class="form-group">
+          		<label for="exampleInputEmail1">ESTADO DE LA OPORTUNIDAD</label><br>
+                <fieldset class="form-group">
+    <select class="form-control" id="exampleSelect1">
+      <option>Citas agendadas</option>
+      <option>Calificado para compra</option>
+      <option>Agenda de presentacion</option>
+      <option>Fecha toma de decision</option>
+      <option>Negocio cerrado</option>
+    </select>
+  </fieldset>
+              </fieldset>
               </div>
-              <div class=" col-md-4">
-            <label for="exampleInputEmail1">EMPRESA</label><br>
-                <button class="btn btn-secondary   "><i class="fa fa-plus-circle"></i> EMPRESA</button>
-              </div>
-              <div class=" col-md-4">
-              <label for="exampleInputEmail1">OPORTUNIDAD</label><br>
-                <button class="btn btn-secondary   "><i class="fa fa-plus-circle"></i> OPORTUNIDAD</button>
+              <div class=" col-md-6">
+              <fieldset class="form-group">
+    <label for="exampleInputEmail1">USUARIO DHORIAN</label>
+    <fieldset class="form-group">
+    <select class="form-control" id="exampleSelect1">
+      <option>JROJAS@KRIGA.EC</option>
+      <option>JLEON@KRIGA.EC</option>
+      <option>CGALARZA@KRIGA.EC</option>
+    </select>
+  </fieldset>
+  </fieldset>
               </div>
           </div>
+          <div class="row">
+          <hr>
+              <div class=" col-md-12">
+              <fieldset class="form-group">
+          		<label for="exampleInputEmail1">COMPANIA</label><br>
+                <fieldset class="form-group">
+    <select class="form-control" id="exampleSelect1">
+      <option>QUEFACILWEB</option>
+      <option>IQCONSULTING</option>
+    </select>
+  </fieldset>
+              </fieldset>
+              </div>
+              </div>
+              <div class="row">
+          <hr>
+              <div class=" col-md-12">
+              <fieldset class="form-group">
+          		<label for="exampleInputEmail1">CONTACTO</label><br>
+                <fieldset class="form-group">
+    <select class="form-control" id="exampleSelect1">
+      <option>GABRIEL LEDESMA</option>
+      <option>DAVID URBINA</option>
+    </select>
+  </fieldset>
+              </fieldset>
+              </div>
+              </div>
+            
                       
 
            
